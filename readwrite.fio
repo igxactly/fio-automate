@@ -1,0 +1,17 @@
+[global]
+group_reporting
+numjobs=8
+runtime=60
+
+direct=1
+ioengine=libaio
+iodepth=4096
+bs=4k
+
+rw=randrw
+rwmixread=50 
+
+# size=2048m
+
+[nvme_randrw]
+filename=/dev/nvme0n1
